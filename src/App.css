@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.App_list{
+  text-align: left;
+  list-style-type: decimal;
+}
+.header{
+  background-color: rgba(40, 44, 52, 0.27);
+}
