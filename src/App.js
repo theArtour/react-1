@@ -2,17 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
-import Profile from "./Components/Profile";
+import Main from "./Components/Main";
 
 const App = function () {
     return (
         <div className="app-wrapper">
-            <Header/>
-            <Navbar/>
-            <Profile/>
+              <div className='container'>
+                  <div className="main-row">
+                     <Navbar/>
+                    {/*<Main/>*/}
+                  </div>
+              </div>
         </div>
     );
 }
+
 
 
 export default App;

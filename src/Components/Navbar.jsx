@@ -1,13 +1,21 @@
 import React from 'react';
+import style  from './Navbar.module.css';
+
+console.log(style)
 const Navbar = function (){
     return(
-        <nav className="nav">
-            <a href='#' >Feed</a>
-            <a href='#'>Profile</a>
-            <a href='#'>Explore</a>
-            <a href='#'>Logout</a>
-            <a href='#'>Trending</a>
-        </nav>
+        <div className={style.nav}>
+            <a href="#" className={style.logo} >
+            </a>
+            <nav className={style.nav}>
+                <a href='#' className={`${style.item} ${style.itemActive}`}>Feed</a>
+                <a href='#' className={style.item} >Profile</a>
+                <a href='#' className={style.item} >Explore</a>
+                <a href='#' className={style.item} >Logout</a>
+                <a href='#' className={style.item} >Trending</a>
+                <a href="#" className={style.item} >SIGN IN +</a>
+            </nav>
+        </div>
     )
 }
 export default Navbar
