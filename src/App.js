@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Header";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/NavBar/Navbar";
 import Main from "./Components/Main";
 
 const App = function () {
