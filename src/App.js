@@ -13,9 +13,9 @@ const App = function () {
                      <Navbar/>
                     {/*<Main/>*/}
                       <main className='mainSection' >
-                          <Post/>
-                          <Post/>
-                          <Post/>
+                          <Post message='My first post in this site'/>
+                          <Post message='Hello everyone'/>
+                          <Post message='How are you'/>
                       </main>
                   </div>
               </div>
