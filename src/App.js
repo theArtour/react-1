@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Header";
 import Navbar from "./Components/NavBar/Navbar";
-import Main from "./Components/Main";
+import Main from "./Components/Main/Main";
+import Post from "./Components/Posts/Post";
 
 const App = function () {
     return (
@@ -11,6 +12,11 @@ const App = function () {
                   <div className="main-row">
                      <Navbar/>
                     {/*<Main/>*/}
+                      <main className='mainSection' >
+                          <Post/>
+                          <Post/>
+                          <Post/>
+                      </main>
                   </div>
               </div>
         </div>

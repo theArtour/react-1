@@ -175,7 +175,7 @@ img {
   display: block;
 }
 /* ----------------------------------------reset------------------------------------- */
-.app-wrapper{
+body{
   background-color: rgb(237,242,246);
 }
 .container{
@@ -200,4 +200,11 @@ img {
 }
 .content img{
 
+}
+.mainSection{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }

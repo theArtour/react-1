@@ -1,8 +1,10 @@
 import React from 'react';
 const Header = function (){
     return(
-        <header className="header" >
-            <img src="https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0" alt="logo"/>
+        <header className="header">
+            <a href="#" className='logo' >
+                {/*<img src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg" alt="logo"/>*/}
+            </a>
         </header>
     )
 }

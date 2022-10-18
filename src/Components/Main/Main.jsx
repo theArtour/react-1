@@ -1,5 +1,5 @@
 import React from 'react';
-const Profile = function (){
+const Main = function (){
     return(
         <div className="content">
             <img
@@ -8,4 +8,4 @@ const Profile = function (){
         </div>
     )
 }
-export default Profile
+export default Main
