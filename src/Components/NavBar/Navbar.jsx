@@ -9,8 +9,9 @@ const Navbar = function (){
             <nav className={style.nav}>
                 <a href='react-1/src/Components/NavBar/Navbar#' className={`${style.item} `}>Feed</a>
                 <a href='react-1/src/Components/NavBar/Navbar#' className={`${style.item} ${style.itemActive}`} >Profile</a>
-                <a href='react-1/src/Components/NavBar/Navbar#' className={style.item} >Explore</a>
+                <a href='react-1/src/Components/NavBar/Navbar#' className={style.item} >Message</a>
                 <a href='react-1/src/Components/NavBar/Navbar#' className={style.item} >Logout</a>
+                <a href='react-1/src/Components/NavBar/Navbar#' className={style.item} >Explore</a>
                 <a href='react-1/src/Components/NavBar/Navbar#' className={style.item} >Trending</a>
                 <a href="react-1/src/Components/NavBar/Navbar#" className={style.item} >SIGN IN +</a>
             </nav>
