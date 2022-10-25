@@ -1,30 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from "./Components/Header";
 import Navbar from "./Components/NavBar/Navbar";
-import Main from "./Components/Main/Main";
-import Post from "./Components/Posts/Post";
+import Profile from "./Components/Profile/Profile";
 import Dialogs from "./Components/Dialogs/Dialogs";
-
+import {BrowserRouter, Router, Routes,  Route,  Link} from "react-router-dom";
 const App = function () {
     return (
-        <div className="app-wrapper">
-              <div className='container'>
-                  <div className="main-row">
-                     <Navbar/>
-                    {/*<Main/>*/}
-                    {/*  <main className='mainSection' >*/}
-                    {/*      <Post message='My first post in this site'/>*/}
-                    {/*      <Post message='Hello everyone'/>*/}
-                    {/*      <Post message='How are you'/>*/}
-                    {/*  </main>*/}
-                      <Dialogs/>
-                  </div>
-              </div>
-        </div>
+        <BrowserRouter>
+                 <div className="app-wrapper">
+                      <div className='container'>
+                          <div className="main-row">
+                             <Navbar/>
+                              <Routes>
+                                  <Route path="/profile/*" element={<Profile/>}/>
+                                  <Route path="/dialogs/*" element={<Dialogs/>}/>
+                              </Routes>
+                          </div>
+                      </div>
+                </div>
+            </BrowserRouter>
     );
 }
-
 
 
 export default App;
