@@ -2,6 +2,7 @@ import React from 'react';
 import style  from './Posts.module.css';
 
 const Post = function (props){
+
     return(
         <div className={style.post} >
                 <div className={style.infoUser}>
