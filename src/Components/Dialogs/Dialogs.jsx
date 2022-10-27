@@ -43,23 +43,22 @@ const Dialogs = function (props) {
             date: '16:22,26.10.2022'
         }
     ]
-
+    let dialogsElements = dialogsData.map((dialog) => {
+        return <Friend name={dialog.name} date={dialog.date} id={dialog.id}/>
+    });
+    let messageElements = messageData.map((message) => {
+        return <Message message={message.message}/>
+    })
     return (
         <div className={style.dialogs}>
             <div className={style.friends}>
                 <h2>Messages</h2>
                 <div className={style.friendsColumn}>
-                    <Friend name={dialogsData[0].name} date={dialogsData[0].date} id={dialogsData[0].id}/>
-                    <Friend  name={dialogsData[1].name} date={dialogsData[1].date} id={dialogsData[1].id} />
-                    <Friend  name={dialogsData[2].name} date={dialogsData[2].date} id={dialogsData[2].id} />
-                    <Friend  name={dialogsData[3].name} date={dialogsData[3].date} id={dialogsData[3].id} />
+                    {dialogsElements}
                 </div>
             </div>
             <div className={style.messages}>
-                <Message message={messageData[0].message}/>
-                <Message message={messageData[1].message}/>
-                <Message message={messageData[2].message}/>
-
+                {messageElements}
                 <input placeholder={'...'} className={style.textMessage} type="text"/>
             </div>
         </div>
